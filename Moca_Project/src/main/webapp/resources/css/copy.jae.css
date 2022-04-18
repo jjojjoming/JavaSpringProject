@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.copy_body{
+    margin-left: 50px;
+    box-sizing: border-box;
+    /*font-family: 'Poppins',sans-serif;*/
+    /*font-family: 'Noto Sans KR', sans-serif;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.copy_container{
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    justify-content: center;
+    align-items: center;
+}
+.copy_container .copy_title{
+    font-size: 25px;
+    font-weight: 500 !important;
+    position: relative;
+}
+.copy_container .copy_title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.copy_content form .copy_user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .copy_user-details .copy_input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+form .copy_input-box span.copy_details{
+    display: block;
+    font-weight: 500 !important;
+    margin-bottom: 5px;
+}
+.copy_user-details .copy_input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.copy_user-details .copy_input-box input:focus,
+.copy_user-details .copy_input-box input:valid ,
+.copy_description:focus{
+    border-color: #9b59b6;
+}
+.copy_description {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+    outline: none;
+}
+
+select{
+    width: 100%;
+    margin-bottom: 15px;
+}
+/*form .category{*/
+/*    display: flex;*/
+/*    width: 80%;*/
+/*    margin: 14px 0 ;*/
+/*    justify-content: space-between;*/
+/*}*/
+/*form .category label{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    cursor: pointer;*/
+/*}*/
+/*form .category label .dot{*/
+/*    height: 18px;*/
+/*    width: 18px;*/
+/*    border-radius: 50%;*/
+/*    margin-right: 10px;*/
+/*    background: #d9d9d9;*/
+/*    border: 5px solid transparent;*/
+/*    transition: all 0.3s ease;*/
+/*}*/
+/*#dot-1:checked ~ .category label .one,*/
+/*#dot-2:checked ~ .category label .two,*/
+/*#dot-3:checked ~ .category label .three{*/
+/*    background: #9b59b6;*/
+/*    border-color: #d9d9d9;*/
+/*}*/
+/*form input[type="radio"]{*/
+/*    display: none;*/
+/*}*/
+form .copy_button{
+    height: 45px;
+    margin: 35px 0
+}
+form .copy_button input{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(294deg, #8400ff, #a25df4);
+}
+form .copy_button input:hover{
+    /* transform: scale(0.99); */
+    background: linear-gradient(-294deg, #8400ff, #a25df4);
+}
+@media(max-width: 584px){
+    .copy_container{
+        max-width: 100%;
+    }
+    form .copy_user-details .copy_input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .category{
+        width: 100%;
+    }
+    .copy_content form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar{
+        width: 5px;
+    }
+}
+@media(max-width: 459px){
+    .copy_container .content .category{
+        flex-direction: column;
+    }
+}
+
+
+/*viewall 전체보기 페이지*/
+
+/*.viewall_container{
+ background: #eee5e9;
+}*/
+
+.viewall_grid{
+    margin-top: 20px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap: 30px;
+    align-items: center;
+}
+
+.viewall_grid > article{
+    background: #f3f1f7;
+    border: none;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform .3s;
+}
+
+.viewall_grid > article:hover{
+    transform: translateY(5px);
+    box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.3);
+}
+
+.viewall_grid>article img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.viewall_grid .text{
+    padding: 0 20px 20px;
+}
+
+.viewall_grid .text h3{
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.viewall_grid .text button{
+    background: #ef6f6c;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: linear-gradient(294deg, #8400ff, #a25df4);
+}
+
+@media (max-width: 768px) {
+    .viewall_grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .viewall_grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .viewall_grid>article{
+        text-align: center;
+    }
+    
+}
+
+
+/*contact*/
+.contactUs{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+
+.contactUs .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.contactUs .title h2{
+    font-weight: 500;
+}
+
+.contactUs .title h3{
+    font-weight: 300;
+}
+
+.form{
+    grid-area: form;
+}
+
+.info{
+    grid-area: info;
+}
+
+.map{
+    grid-area: map;
+}
+
+.contact{
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+}
+
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 4fr 3fr;
+    grid-template-areas:
+    "form info"
+    "form map";
+    grid-gap: 20px;
+}
+
+.contact h3{
+    color: #0e3959;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/*form*/
+.formBox{
+    position: relative;
+    width: 100%;
+}
+
+.formBox .row50{
+    display: flex;
+    gap: 20px;
+}
+
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.formBox .row100 .inputBox{
+    width: 100%;
+}
+
+.inputBox span{
+    color: #18b7ff;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.inputBox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+}
+
+.inputBox textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 150px;
+    margin-bottom: 10px;
+}
+
+.inputBox input[type="submit"]{
+    background: #ff578b;
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+
+.inputBox::placeholder{
+    color:#999;
+}
+
+/*info*/
+.info{
+    background: #0e3959;
+}
+.info h3{
+    color: #fff;
+}
+.info .infoBox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info .infoBox div span{
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #18b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info .infoBox div p{
+    color: #fff;
+}
+
+.info .infoBox div a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.sci{
+    margin-top: 40px;
+    display: flex;
+}
+
+.sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+.sci li a{
+    color: #fff;
+    font-size: 2em;
+    color: #ccc;
+}
+
+.sci li a:hover{
+    color: #fff;
+}
+
+.map{
+    padding: 0;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/*Responsive*/
+@media (max-width: 991px) {
+    .contactUs{
+        padding: 20px;
+    }
+    .box{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+                "form"
+                "info"
+                "map";
+    }
+    .map{
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 580px) {
+    .formBox .row50{
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+    .inputBox{
+        width: 100%;
+    }
+    .contact{
+        padding: 30px;
+    }
+}

@@ -1,0 +1,45 @@
+.Register{
+  width: 100%;
+  height: 100vh;
+}
+
+section.pricing {
+  display: flex;
+  ustify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.member-ship-btn{
+  width: 22.5rem !important;
+  margin-bottom: 17px;
+}
+
+.RegisterOption__CHECKED.RegisterOption--gray .RegisterOption__button{
+  background-color: unset !important;
+  color: #a9abb7!important;
+}
+
+.RegisterHeader__content--title > span {
+  font-size: 4rem;
+  font-family: Highlight Font ko,Noto Sans KR,sans-serif;
+  background: linear-gradient(to right top, #f5d952, #fda346);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.RegisterOption--orange .RegisterOption__title{
+  background-image: linear-gradient(to right top, #f5d952, #fda346);
+  color: #fff;
+}
+
+.RegisterOption--orange .RegisterOption__button {
+  color: #fda346;
+  border: 0.2rem solid;
+}
+.RegisterOption--orange .RegisterOption__info--discount {
+  color: #fda346;
+}
+
+
+

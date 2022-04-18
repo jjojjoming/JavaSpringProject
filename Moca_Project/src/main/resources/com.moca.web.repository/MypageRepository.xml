@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.moca.web.repository.MypageRepository">
+
+    <select id="selectUserInfo" parameterType="String" resultType="USERS">
+        select * from moca_client.USER
+        <where>
+        	email like #{email}
+		</where>
+    </select>
+
+    <update id="updatePassword" parameterType="USERS">
+		update moca_client.USER
+		<set>
+		    password = #{password},
+		    name = #{name},
+		    address = #{address},
+		    phone = #{phone},
+		    modified_date = NOW()
+        </set>
+		where id = #{id}
+	</update>
+
+	<update id="updateInfo" parameterType="USERS">
+		update moca_client.USER
+		<set>
+			name = #{name},
+			address = #{address},
+			phone = #{phone},
+			modified_date = NOW()
+		</set>
+		where id = #{id}
+	</update>
+
+	<update id="updateProfileImg" parameterType="USERS">
+		update moca_client.USER
+		<set>
+			profileImgName = #{profileImgName}
+		</set>
+		where id = #{id}
+	</update>
+
+	<update id="deleteAuthority" parameterType="USERS">
+		update moca_client.USER_AUTHORITY
+		<set>
+			authority = 'DELETE'
+		</set>
+		where user_id = #{id}
+	</update>
+
+	<update id="deleteUser" parameterType="USERS">
+		update moca_client.USER
+		<set>
+			password = #{password},
+			verification_code = 'withdrawal'
+		</set>
+		where id = #{id}
+	</update>
+	
+	<update id="verificationCodeMail" parameterType="USERS">
+		update moca_client.USER
+		<set>
+			verification_code = #{verificationCode}
+		</set>
+		where id = #{id}
+	</update>
+
+	<select id="selectHeadHistory" parameterType="USERS" resultType="History">
+		select history_id, sentence, type_id, user_id from moca_client.HISTORY
+		where user_id = #{id} and type_id = 7
+		order by history_id desc
+	</select>
+
+	<select id="selectSalesHistory" parameterType="USERS" resultType="History">
+		select history_id, sentence, type_id, user_id from moca_client.HISTORY
+		where user_id = #{id} and type_id = 8
+		order by history_id desc
+	</select>
+
+	<select id="selectNaverHistory" parameterType="USERS" resultType="History">
+		select history_id, sentence, type_id, user_id from moca_client.HISTORY
+		where user_id = #{id} and type_id = 9
+		order by history_id desc
+	</select>
+
+	<select id="selectYoutubeHistory" parameterType="USERS" resultType="History">
+		select history_id, sentence, type_id, user_id from moca_client.HISTORY
+		where user_id = #{id} and type_id = 10
+		order by history_id desc
+	</select>
+
+	<delete id="deleteHistory" parameterType="History">
+		delete from moca_client.HISTORY
+		where history_id = #{historyId}
+	</delete>
+
+	<update id="updateHistory" parameterType="History">
+		update moca_client.HISTORY
+		<set>
+			sentence = #{sentence}
+		</set>
+		where history_id = #{historyId}
+	</update>
+
+	<insert id="insertReview" parameterType="Review">
+		insert into moca_client.REVIEW(user_id, content, open_view, write_date)
+		values (#{userId}, #{content}, #{openView}, NOW())
+	</insert>
+
+	<select id="selectReview" parameterType="USERS" resultType="Review">
+		select * from moca_client.REVIEW
+		where user_id = #{id}
+		order by review_id desc
+	</select>
+
+	<delete id="deleteReview" parameterType="Review">
+		delete from moca_client.REVIEW
+		where review_id = #{reviewId}
+	</delete>
+
+	<update id="updateReview" parameterType="Review">
+		update moca_client.REVIEW
+		<set>
+			content = #{content}
+		</set>
+		where review_id = #{reviewId}
+	</update>
+
+	<select id="selectBoard" parameterType="USERS" resultType="Cs">
+		select * from moca_client.FAQBOARD
+		where userId = #{id}
+		order by boardId desc
+	</select>
+
+
+</mapper>

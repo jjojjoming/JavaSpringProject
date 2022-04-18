@@ -1,0 +1,609 @@
+.TeamsCoreValuesIconButton_TeamsCoreValuesIconButton__1uM6r {
+  position: relative;
+  display: -moz-box;
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+  -moz-box-align: center;
+  align-items: center;
+  width: 78px
+}
+
+.TeamsCoreValuesIconButton_TeamsCoreValuesIconButton__1uM6r svg {
+  width: 45px;
+  height: 45px
+}
+
+.TeamsCoreValuesIconButton_selected__zawau {
+  -moz-box-align: start;
+  align-items: flex-start;
+  padding-top: 19px;
+  height: 111px;
+  border: none;
+  border-radius: none;
+  /*background-image: url(/images/comma-S.svg);*/
+  background-size: cover
+}
+
+.TeamsCoreValuesIconButton_selected__zawau svg {
+  stroke: #191620
+}
+
+.TeamsCoreValuesIconButton_unselected__2PGIE {
+  height: 78px;
+  border: 3px solid #cbcbd3;
+  border-radius: 50%
+}
+
+.TeamsCoreValuesIconButton_unselected__2PGIE svg {
+  stroke: #fff
+}
+
+.TeamsCoreValues_TeamsCoreValues__wpltI {
+  display: -moz-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.TeamsCoreValues_TeamsCoreValues__wpltI .TeamsCoreValues_slogan__3GCtm {
+  position: relative;
+  flex-basis: 100%;
+  font-family: SulphurPoint;
+  font-size: 85px;
+  font-weight: 700;
+  color: #fff;
+  -webkit-text-stroke: 1px #fff;
+  line-height: 1.18;
+  letter-spacing: -.35px;
+  margin: 110px auto;
+}
+
+.TeamsCoreValues_TeamsCoreValues__wpltI .TeamsCoreValues_coreValuesContainer__rEhSl {
+  display: -moz-box;
+  display: flex;
+  margin-top: 200px;
+}
+
+.TeamsCoreValues_TeamsCoreValues__wpltI .TeamsCoreValues_coreValuesContainer__rEhSl .TeamsCoreValues_title__5Tg2H {
+  width: 165px;
+  margin-top: 8px;
+  word-break: keep-all;
+  font-family: Noto Sans KR;
+  font-size: 34px;
+  color: #fff;
+  line-height: 1.53;
+  letter-spacing: -.4px
+}
+
+.TeamsCoreValues_TeamsCoreValues__wpltI .TeamsCoreValues_coreValuesContainer__rEhSl .TeamsCoreValues_title__5Tg2H:lang(en) {
+  width: 186px;
+  font-family: NunitoSans
+}
+
+.TeamsCoreValues_TeamsCoreValues__wpltI .TeamsCoreValues_coreValuesContainer__rEhSl .TeamsCoreValues_verticalDivider__gMBQ9 {
+  width: 1px;
+  height: 350px;
+  margin-left: 50px;
+  background-color: #484450
+}
+
+.TeamsCoreValues_TeamsCoreValues__wpltI .TeamsCoreValues_coreValuesContainer__rEhSl .TeamsCoreValues_verticalDivider__gMBQ9:lang(en) {
+  margin-left: 29px
+}
+
+.TeamsCoreValues_TeamsCoreValues__wpltI .TeamsCoreValues_coreValuesContainer__rEhSl .TeamsCoreValues_contentBox__1Pu8j {
+  width: 620px;
+  margin-top: 16px;
+  margin-left: 60px
+}
+
+.TeamsCoreValues_TeamsCoreValues__wpltI .TeamsCoreValues_coreValuesContainer__rEhSl .TeamsCoreValues_contentBox__1Pu8j .TeamsCoreValues_iconBox__1wN-H {
+  display: -moz-box;
+  display: flex;
+  -moz-box-pack: justify;
+  justify-content: space-between
+}
+
+.TeamsCoreValues_TeamsCoreValues__wpltI .TeamsCoreValues_coreValuesContainer__rEhSl .TeamsCoreValues_contentBox__1Pu8j .TeamsCoreValues_content__3JGoL {
+  margin-top: 59px
+}
+
+.TeamsCoreValues_TeamsCoreValues__wpltI .TeamsCoreValues_coreValuesContainer__rEhSl .TeamsCoreValues_contentBox__1Pu8j .TeamsCoreValues_content__3JGoL .TeamsCoreValues_orderText__1fB3a {
+  font-family: SulphurPoint;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -.4px;
+  color: #fff
+}
+
+.TeamsCoreValues_TeamsCoreValues__wpltI .TeamsCoreValues_coreValuesContainer__rEhSl .TeamsCoreValues_contentBox__1Pu8j .TeamsCoreValues_content__3JGoL .TeamsCoreValues_subject__12T-5 {
+  margin-top: 14px;
+  font-family: Noto Sans KR;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -.7px;
+  color: #fff
+}
+
+.TeamsCoreValues_TeamsCoreValues__wpltI .TeamsCoreValues_coreValuesContainer__rEhSl .TeamsCoreValues_contentBox__1Pu8j .TeamsCoreValues_content__3JGoL .TeamsCoreValues_subject__12T-5:lang(en) {
+  margin-top: 18px;
+  font-family: NunitoSans;
+  font-weight: 600
+}
+
+.TeamsCoreValues_TeamsCoreValues__wpltI .TeamsCoreValues_coreValuesContainer__rEhSl .TeamsCoreValues_contentBox__1Pu8j .TeamsCoreValues_content__3JGoL .TeamsCoreValues_description__2e02t {
+  margin-top: 22px;
+  font-family: Noto Sans KR;
+  font-size: 16px;
+  line-height: 1.94;
+  letter-spacing: -.2px;
+  color: #fff;
+  word-break: keep-all
+}
+
+.TeamsCoreValues_TeamsCoreValues__wpltI .TeamsCoreValues_coreValuesContainer__rEhSl .TeamsCoreValues_contentBox__1Pu8j .TeamsCoreValues_content__3JGoL .TeamsCoreValues_description__2e02t:lang(en) {
+  margin-top: 23px;
+  font-family: NunitoSans
+}
+
+.TeamsIntroductionNavigatorItem_navigatorItem__2d6HW {
+  display: -moz-box;
+  display: flex;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-direction: column;
+  -moz-box-pack: center;
+  justify-content: center;
+  -moz-box-align: center;
+  align-items: center;
+  margin-top: 100px
+}
+
+.TeamsIntroductionNavigatorItem_navigatorItem__2d6HW .TeamsIntroductionNavigatorItem_navigatorButton__LJmw7 {
+  font-family: Noto Sans KR;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -.2px;
+  -webkit-transition: .1s ease-in-out;
+  -moz-transition: .1s ease-in-out;
+  transition: .1s ease-in-out
+}
+
+.TeamsIntroductionNavigatorItem_navigatorItem__2d6HW .TeamsIntroductionNavigatorItem_navigatorButton__LJmw7:lang(en) {
+  font-family: NunitoSans;
+  font-weight: 600;
+  line-height: 1.47
+}
+
+.TeamsIntroductionNavigatorItem_navigatorItem__2d6HW .TeamsIntroductionNavigatorItem_circle__Exbjm {
+  margin-top: 5px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #191620;
+  -webkit-transition: .1s ease-in-out;
+  -moz-transition: .1s ease-in-out;
+  transition: .1s ease-in-out
+}
+
+.TeamsIntroductionNavigatorItem_navigatorItem__2d6HW:hover .TeamsIntroductionNavigatorItem_navigatorButton__LJmw7 {
+  color: #191620
+}
+
+.TeamsIntroductionNavigatorItem_navigatorItem__2d6HW:hover .TeamsIntroductionNavigatorItem_circle__Exbjm {
+  opacity: 1
+}
+
+.TeamsIntroductionNavigatorItem_navigatorItem__2d6HW + .TeamsIntroductionNavigatorItem_navigatorItem__2d6HW {
+  margin-left: 65px
+}
+
+.TeamsIntroductionNavigatorItem_selected__2KHO7 .TeamsIntroductionNavigatorItem_navigatorButton__LJmw7 {
+  color: #191620
+}
+
+.TeamsIntroductionNavigatorItem_selected__2KHO7 .TeamsIntroductionNavigatorItem_circle__Exbjm {
+  opacity: 1
+}
+
+.TeamsIntroductionNavigatorItem_unselected__37wkq .TeamsIntroductionNavigatorItem_navigatorButton__LJmw7 {
+  color: #a6a5ac
+}
+
+.TeamsIntroductionNavigatorItem_unselected__37wkq .TeamsIntroductionNavigatorItem_circle__Exbjm {
+  opacity: 0
+}
+
+.ButtonCircleWithChevron_ButtonCircleWithChevron__d3MZD {
+  display: -moz-box;
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+  -moz-box-align: center;
+  align-items: center;
+  width: 44px;
+  height: 44px
+}
+
+.ButtonCircleWithChevron_ButtonCircleWithChevron__d3MZD .ButtonCircleWithChevron_buttonCircle__25FMq {
+  display: -moz-box;
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+  -moz-box-align: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: #e7e7ea;
+  border-radius: 50%;
+  -webkit-transition: .1s ease-in-out;
+  -moz-transition: .1s ease-in-out;
+  transition: .1s ease-in-out
+}
+
+.ButtonCircleWithChevron_ButtonCircleWithChevron__d3MZD:hover .ButtonCircleWithChevron_buttonCircle__25FMq {
+  width: 44px;
+  height: 44px;
+  background-color: #8112f0
+}
+
+.ButtonCircleWithChevron_ButtonCircleWithChevron__d3MZD:hover .ButtonCircleWithChevron_chevron__1x3Gb {
+  stroke: #fff
+}
+
+.ButtonCircleWithChevron_ButtonCircleWithChevron__d3MZD .ButtonCircleWithChevron_chevron__1x3Gb {
+  width: 10px;
+  height: 10px;
+  stroke: #191620
+}
+
+.ButtonCircleWithChevron_ButtonCircleWithChevron__d3MZD .ButtonCircleWithChevron_chevron__1x3Gb.ButtonCircleWithChevron_left__1zKuL {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg)
+}
+
+.ButtonCircleWithChevron_ButtonCircleWithChevron__d3MZD .ButtonCircleWithChevron_chevron__1x3Gb.ButtonCircleWithChevron_right__1xFY8 {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  transform: rotate(-90deg)
+}
+
+.ButtonCircleWithChevron_ButtonCircleWithChevron__d3MZD .ButtonCircleWithChevron_chevron__1x3Gb.ButtonCircleWithChevron_up__3OaeF {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg)
+}
+
+.ButtonCircleWithChevron_ButtonCircleWithChevron__d3MZD .ButtonCircleWithChevron_chevron__1x3Gb.ButtonCircleWithChevron_down__2-PV8 {
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  transform: rotate(0)
+}
+
+.TeamsIntroduction_TeamsIntroduction__2Kr6B {
+  /*position: relative;*/
+  /*width: 100%;*/
+  /*height: 488px;*/
+  margin-top: 275px;
+  padding-left: 15px
+}
+
+.TeamsIntroduction_TeamsIntroduction__2Kr6B .TeamsIntroduction_title__16nLY {
+  position: relative;
+  font-family: SulphurPoint;
+  font-size: 40px;
+  font-weight: 700;
+  -webkit-text-stroke: 1px #000;
+  letter-spacing: -.39px;
+  color: #191620
+}
+
+.TeamsIntroduction_TeamsIntroduction__2Kr6B .TeamsIntroduction_navigatorItems__1yzCs {
+  display: -moz-box;
+  display: flex
+}
+
+.TeamsIntroduction_TeamsIntroduction__2Kr6B .TeamsIntroduction_contentBox__b9Alt {
+  display: -moz-box;
+  /*display: flex;*/
+  -moz-box-pack: start;
+  justify-content: flex-start;
+  margin-top: 112px;
+  font-family: Noto Sans KR;
+  color: #191620
+}
+
+.TeamsIntroduction_TeamsIntroduction__2Kr6B .TeamsIntroduction_contentBox__b9Alt:lang(en) {
+  font-family: NunitoSans
+}
+
+.TeamsIntroduction_TeamsIntroduction__2Kr6B .TeamsIntroduction_contentBox__b9Alt .TeamsIntroduction_subject__2hMt3 {
+  position: relative;
+  top: -37px;
+  min-width: 194px;
+  flex-basis: 194px;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: -.28px;
+  word-break: keep-all
+}
+
+.TeamsIntroduction_TeamsIntroduction__2Kr6B .TeamsIntroduction_contentBox__b9Alt .TeamsIntroduction_subject__2hMt3:lang(en) {
+  min-width: 235px;
+  flex-basis: 235x;
+  font-weight: 600
+}
+
+.TeamsIntroduction_TeamsIntroduction__2Kr6B .TeamsIntroduction_contentBox__b9Alt .TeamsIntroduction_subject__2hMt3 .TeamsIntroduction_quotesStart__EKEC2 {
+  position: relative;
+  top: 37px;
+  left: -14px;
+  display: block;
+  z-index: -1
+}
+
+.TeamsIntroduction_TeamsIntroduction__2Kr6B .TeamsIntroduction_contentBox__b9Alt .TeamsIntroduction_subject__2hMt3 .TeamsIntroduction_quotesEnd__3VvwY {
+  position: relative;
+  top: -37px;
+  left: 165px;
+  display: block;
+  z-index: -1
+}
+
+.TeamsIntroduction_TeamsIntroduction__2Kr6B .TeamsIntroduction_contentBox__b9Alt .TeamsIntroduction_subject__2hMt3 .TeamsIntroduction_quotesEnd__3VvwY:lang(en) {
+  left: 206px
+}
+
+.TeamsIntroduction_TeamsIntroduction__2Kr6B .TeamsIntroduction_contentBox__b9Alt .TeamsIntroduction_content__2-64Q {
+  margin-left: 104px
+}
+
+.TeamsIntroduction_TeamsIntroduction__2Kr6B .TeamsIntroduction_contentBox__b9Alt .TeamsIntroduction_content__2-64Q:lang(en) {
+  margin-left: 62px
+}
+
+.TeamsIntroduction_TeamsIntroduction__2Kr6B .TeamsIntroduction_contentBox__b9Alt .TeamsIntroduction_content__2-64Q .TeamsIntroduction_teamName__mnu4f {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -.3px
+}
+
+.TeamsIntroduction_TeamsIntroduction__2Kr6B .TeamsIntroduction_contentBox__b9Alt .TeamsIntroduction_content__2-64Q .TeamsIntroduction_teamName__mnu4f:lang(en) {
+  font-weight: 700;
+  line-height: 1.5
+}
+
+.TeamsIntroduction_TeamsIntroduction__2Kr6B .TeamsIntroduction_contentBox__b9Alt .TeamsIntroduction_content__2-64Q .TeamsIntroduction_description__3VEMm {
+  width: 800px;
+  height: 186px;
+  margin-top: 25px;
+  font-size: 16px;
+  line-height: 1.94;
+  letter-spacing: -.2px
+}
+
+.TeamsIntroduction_TeamsIntroduction__2Kr6B .TeamsIntroduction_controller__e8vS7 {
+  position: absolute;
+  display: -moz-box;
+  display: flex;
+  margin-top: -75px
+}
+
+.TeamsIntroduction_TeamsIntroduction__2Kr6B .TeamsIntroduction_controller__e8vS7 > div + div {
+  margin-left: 8px
+}
+
+.ButtonRoundWithHarpoon_ButtonRoundWithHarpoon__19W5Q {
+  display: -moz-box;
+  display: flex;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  -moz-box-align: center;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 44px;
+  padding-left: 22px;
+  padding-right: 20px;
+  border: 1px solid #fff;
+  border-radius: 25px
+}
+
+@media (min-width: 768px) {
+  .ButtonRoundWithHarpoon_ButtonRoundWithHarpoon__19W5Q {
+    height: 50px;
+    padding-left: 31px;
+    padding-right: 27px
+  }
+}
+
+.ButtonRoundWithHarpoon_ButtonRoundWithHarpoon__19W5Q:hover .ButtonRoundWithHarpoon_harpoon__1zH3N {
+  -webkit-transform: translateX(-5px);
+  -moz-transform: translateX(-5px);
+  transform: translateX(-5px)
+}
+
+.ButtonRoundWithHarpoon_ButtonRoundWithHarpoon__19W5Q .ButtonRoundWithHarpoon_message__2i2Hd {
+  margin-right: 46px;
+  margin-bottom: 1px;
+  color: #fff;
+  font-size: 14px;
+  font-family: Noto Sans KR;
+  letter-spacing: -.16px
+}
+
+@media (min-width: 768px) {
+  .ButtonRoundWithHarpoon_ButtonRoundWithHarpoon__19W5Q .ButtonRoundWithHarpoon_message__2i2Hd {
+    margin-right: 75px;
+    font-size: 16px;
+    letter-spacing: -.2px
+  }
+}
+
+@media (min-width: 1200px) {
+  .ButtonRoundWithHarpoon_ButtonRoundWithHarpoon__19W5Q .ButtonRoundWithHarpoon_message__2i2Hd {
+    font-size: 17px
+  }
+}
+
+.ButtonRoundWithHarpoon_ButtonRoundWithHarpoon__19W5Q .ButtonRoundWithHarpoon_message__2i2Hd:lang(en) {
+  margin-right: 44px;
+  font-family: NunitoSans
+}
+
+@media (min-width: 768px) {
+  .ButtonRoundWithHarpoon_ButtonRoundWithHarpoon__19W5Q .ButtonRoundWithHarpoon_message__2i2Hd:lang(en) {
+    margin-right: 75px;
+    line-height: 1.5
+  }
+}
+
+@media (min-width: 1200px) {
+  .ButtonRoundWithHarpoon_ButtonRoundWithHarpoon__19W5Q .ButtonRoundWithHarpoon_message__2i2Hd:lang(en) {
+    line-height: 1.47
+  }
+}
+
+.ButtonRoundWithHarpoon_ButtonRoundWithHarpoon__19W5Q .ButtonRoundWithHarpoon_harpoon__1zH3N {
+  width: 20px;
+  height: 20px;
+  stroke: #fff;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  transition: .3s ease-in-out
+}
+
+@media (min-width: 768px) {
+  .ButtonRoundWithHarpoon_ButtonRoundWithHarpoon__19W5Q .ButtonRoundWithHarpoon_harpoon__1zH3N {
+    width: 26px;
+    height: 26px
+  }
+}
+
+.TeamsRecruiting_TeamsRecruiting__h8hWJ {
+  position: relative;
+  display: -moz-box;
+  display: flex;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-direction: column;
+  -moz-box-align: center;
+  align-items: center;
+  margin-top: 351px;
+  font-family: Noto Sans KR
+}
+
+.TeamsRecruiting_TeamsRecruiting__h8hWJ:lang(en) {
+  font-family: NunitoSans
+}
+
+.TeamsRecruiting_TeamsRecruiting__h8hWJ .TeamsRecruiting_message__1aEh6 {
+  position: relative;
+  font-size: 38px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.55;
+  letter-spacing: -.8px;
+  color: #fff
+}
+
+.TeamsRecruiting_TeamsRecruiting__h8hWJ .TeamsRecruiting_message__1aEh6:lang(en) {
+  font-weight: 600
+}
+
+.TeamsRecruiting_TeamsRecruiting__h8hWJ .TeamsRecruiting_routingButton__3Fsu_ {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 5px
+}
+
+.TeamsBackground_TeamsBackground__2p_tn .TeamsBackground_topCoverImage__1JIAb {
+  position: relative;
+  display: -moz-box;
+  display: flex;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  height: 702px
+}
+
+.TeamsBackground_TeamsBackground__2p_tn .TeamsBackground_topCoverImage__1JIAb svg {
+  position: relative
+}
+
+.TeamsBackground_TeamsBackground__2p_tn .TeamsBackground_topCoverImage__1JIAb .TeamsBackground_decorationComma__11SW4 {
+  margin-left: 61px
+}
+
+.TeamsBackground_TeamsBackground__2p_tn .TeamsBackground_topCoverImage__1JIAb .TeamsBackground_decorationCircle__1LcpP {
+  margin-top: 25px
+}
+
+.TeamsBackground_TeamsBackground__2p_tn .TeamsBackground_darkBox__2HVJX {
+  position: relative;
+  width: 100%;
+  height: 680px;
+  margin-top: -120px;
+  margin-left: auto;
+  /*background-color: #191620;*/
+  background-color: #d178d7;
+  border-radius: 70px 0 0 70px
+}
+
+@media (min-width: 1500px) {
+  .TeamsBackground_TeamsBackground__2p_tn .TeamsBackground_darkBox__2HVJX {
+    width: 91.15vw;
+    min-width: 1200px
+  }
+}
+
+.TeamsBackground_TeamsBackground__2p_tn .TeamsBackground_grayBox__1Nh73 {
+  width: 98.67vw;
+  height: 151px;
+  margin-top: 221px;
+  background-color: #f3f3f4;
+  border-radius: 0 35px 35px 0
+}
+
+@media (min-width: 1500px) {
+  .TeamsBackground_TeamsBackground__2p_tn .TeamsBackground_grayBox__1Nh73 {
+    width: -webkit-calc(1200px + 18.75vw);
+    width: -moz-calc(1200px + 18.75vw);
+    width: calc(1200px + 18.75vw);
+    min-width: 1200px
+  }
+}
+
+.TeamsBackground_TeamsBackground__2p_tn .TeamsBackground_bottomCoverImage__2MhS1 {
+  position: relative;
+  width: 100%;
+  height: 622px;
+  margin-top: 555px;
+  margin-bottom: 160px
+}
+
+.TeamsContainer_TeamsContainer__9P6w8 .TeamsContainer_positionAligner__3jxbn {
+  position: absolute;
+  top: 120px;
+  display: -moz-box;
+  display: flex;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-direction: column;
+  -moz-box-align: center;
+  align-items: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.TeamsContainer_TeamsContainer__9P6w8 .TeamsContainer_positionAligner__3jxbn .TeamsContainer_teamsContentBox__1849w {
+  width: 1200px;
+  padding-left: 40px;
+  padding-right: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+/*# sourceMappingURL=fbfb68ed6500cb66042e.css.map*/

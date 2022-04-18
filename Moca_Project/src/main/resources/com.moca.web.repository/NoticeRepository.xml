@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.moca.web.repository.NoticeRepository">
+
+    <select id="selectNoticeList" resultType="Notice">
+        SELECT notice_id,
+               title,
+               content,
+               main_display   AS mainDisplay,
+               header_content AS headerContent,
+               show_status    AS showStatus,
+               created_at
+        FROM taehan.NOTICE
+        WHERE main_display = 1
+          AND header_content = #{headerContent}
+        ORDER BY notice_id DESC
+            LIMIT #{pager.start}, #{pager.itemCountPerPage}
+    </select>
+
+    <select id="selectNoticeCount" resultType="int">
+        SELECT COUNT(notice_id)
+        FROM taehan.NOTICE
+        WHERE main_display = 1
+          AND header_content = 0
+    </select>
+</mapper>

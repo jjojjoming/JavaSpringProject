@@ -1,0 +1,169 @@
+/*모카제목*/
+.sign-up {
+    text-align: center;
+    margin: auto !important;
+    background: linear-gradient(to right top, #f5d952, #fda346);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+h1 .fw-bold {
+    font-weight: 700 !important;
+}
+h1, .h1 {
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+
+.SignUpHeader_container__gdFGp .SignUpHeader_codeitLogo__CFWJv {
+    width: 16.9rem;
+    height: 4.8rem;
+}
+
+.SignUpHeader_container__gdFGp .SignUpHeader_message__eOoP7 {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    color: #333236;
+}
+
+.SignUpContent {
+    margin-top: 3.5rem;
+}
+
+*, :after, :before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    background-color: transparent;
+}
+
+.SignUpHeader_container__gdFGp .SignUpHeader_link__BIkIU {
+    margin-left: 0.6rem;
+    font-weight: 500;
+    color: #ff6600;
+}
+
+.SignUpHeader_container__gdFGp a {
+    height: 4.8rem;
+}
+
+/** {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: white;
+}
+
+.main-container {
+    dispaly:flex;
+    width: 600px;
+    margin: 100px auto;
+    padding: 10px;
+    flex-direction: column;
+    align-items:center;
+    background-color: white;
+}
+
+.Easy-sgin-in h4 {
+    font-size: 60px;
+    font-style: italic;
+    background: linear-gradient(to bottom, #FCCF31, #F55555);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Easy-sgin-in h5 {
+    font-size: 15px;
+    font-style: oblique;
+    text-align: center;
+    color : black;
+    font-weight: normal
+}
+
+.Easy-sgin-in h5 button {
+    border-color: white;
+    color: blue;
+}
+.Easy-sgin-in {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.Easy-sgin-in .sign-button-list {
+    padding-top: 30px;
+    list-style: none;
+    width: 465px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Easy-sgin-in .sign-button-list li {
+    padding-bottom: 10px;
+}
+
+.Easy-sgin-in .sign-button-list li button {
+    width: 300px;
+    height: 50px;
+    text-align: left;
+    border-radius: 12px;
+}
+
+.Easy-sgin-in .sign-button-list li button i {
+    font-size: 10px;
+
+}
+
+.kakao img {
+    height: 30px;
+    padding-left: 40px;
+    vertical-align: top;
+
+}
+
+.facebook img {
+    height: 30px;
+    padding-left: 40px;
+    vertical-align: top;
+}
+
+.Email img {
+    height: 30px;
+    padding-left: 35px;
+    vertical-align: top;
+}
+
+.twitter img {
+    height: 40px;
+    vertical-align: top;
+}
+
+.naver img {
+    height: 40px;
+    vertical-align: top;
+}
+
+.Easy-sgin-in .sign-button-list li button span {
+    font-size: 15px;
+    padding-left: 20px;
+    text-align: center;
+
+}
+
+.forget button {
+    all: unset;
+}
+
+.Easy-sgin-in .forget {
+    font-size: 15px;
+    width: 300px;
+    margin: 10px;
+    margin-left: 110px;
+    display: inline-block;
+}*/

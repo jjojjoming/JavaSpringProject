@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.moca.web.repository.CsRepository">
+
+    <!--게시글 보기-->
+    <select id="select_boardAll" resultType="Cs">
+        select a1.boardId, a1.subject, a1.userId, a1.content, a1.writeDay, a1.readCount, a2.name
+        from moca_client.FAQBOARD a1 inner join moca_client.USER a2
+        on a1.userId = a2.id
+        order by a1.boardId desc
+    </select>
+
+    <!--page-->
+    <select id="select_boardCount" resultType="int">
+        select count(boardId) from moca_client.FAQBOARD
+    </select>
+
+    <!--글 작성-->
+    <insert id="insertContent" parameterType="Cs">
+        INSERT INTO moca_client.FAQBOARD (subject,userId,content,writeDay,readCount)
+        VALUES(#{subject},#{userId},#{content},NOW(),0);
+    </insert>
+
+
+    <select id="readFaq" resultType="Cs" parameterType="int">
+        select a1.boardId, a1.subject, a1.userId, a1.content, a1.writeDay, a1.readCount, a2.name
+        from moca_client.FAQBOARD a1 inner join moca_client.USER a2
+        on a1.userId = a2.id
+		where a1.userId=a2.id and a1.boardId=#{boardId}
+		order by a1.boardId desc
+    </select>
+
+    <update id="updateFaq" parameterType="Cs">
+        update moca_client.FAQBOARD set subject=#{subject},content=#{content}, writeDay=NOW()  where boardId=#{boardId}
+    </update>
+    
+    <delete id="deleteFaq" parameterType="int">
+       delete from FAQBOARD where boardId = #{boardId}
+    </delete>
+
+</mapper>
+
+<!--@Delete("delete from content_table where content_idx = #{content_idx}")
+	void deleteContentInfo(int content_idx);-->
+
+        <!--    <select id="countByRegistrationNumber" resultType="int">-->
+        <!--        SELECT-->
+        <!--        COUNT(member_id)-->
+        <!--        FROM-->
+        <!--        astar_admin.MEMBER-->
+        <!--        WHERE-->
+        <!--        registration_number1 = #{registrationNumber1,typeHandler=encryptTypeHandler}-->
+        <!--        AND registration_number2 = #{registrationNumber2,typeHandler=encryptTypeHandler}-->
+        <!--    </select>-->
+
+
+<!--"update content_table " +
+			"set content_subject = #{content_subject}, content_text = #{content_text}, " +
+			"content_file = #{content_file, jdbcType=VARCHAR} " +
+			"where content_idx = #{content_idx}"-->

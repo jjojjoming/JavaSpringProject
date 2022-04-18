@@ -1,0 +1,64 @@
+server:
+  port: 8081
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+  datasource:
+    url: jdbc:mariadb://astar-maria.c5dsp2ro13rz.ap-northeast-2.rds.amazonaws.com:3306/moca_client
+    username: astar6
+    password: dktmxkzjavjsl*6
+    driver-class-name: org.mariadb.jdbc.Driver
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: jangm0611@gmail.com
+    password: tijstxbvdjlwvcal
+    properties:
+      mail:
+        smtp:
+          auth: true
+          timeout: 5000
+          starttls:
+            enable: true
+
+mybatis:
+  mapper-locations: classpath:com.moca.web.repository/*.xml
+  config-location: classpath:mybatis-config.xml
+  type-aliases-package: com.moca.web.domain
+
+sms:
+  apikey: NCSAUQ0WXZNVMCVL
+  apisecret: A6L7Y68CVOAQYIZBKWJVEFFCRKGCNCCA
+  fromnumber: "01090491474"
+
+cloud:
+  aws:
+    credentials:
+      accessKey: AKIAVRRMGRNZCPKVPX4B
+      secretKey: 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
+    s3:
+      bucket: moca-profile-img
+    region:
+      static: ap-northeast-2
+    stack:
+      auto: false
+
+moca:
+  data:
+    profile: /home/ec2-user/git/web/data/profile/
+
+logging:
+  level:
+    com:
+      amazonaws:
+        util:
+          EC2MetadataUtils: error
+
+
+
+

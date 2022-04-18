@@ -1,0 +1,114 @@
+.UserAccountContainerTemplate__content {
+    margin: 0;
+    padding: 50px;
+}
+.section_delete .h_dropout:first-child {
+    margin-top: 0
+}
+
+.h_dropout {
+    font-size: 12px;
+    margin-top: 59px;
+    margin-bottom: 0 !important;
+    padding-left: 13px;
+    color: #333;
+    background: url(https://static.nid.naver.com/images/web/user/sp_ico.png) no-repeat 0 3px
+}
+
+.h_dropout em {
+    font-family: tahoma, sans-serif;
+    color: #390
+}
+
+.dropout_dsc {
+    font-size: 12px;
+    line-height: 19px;
+    padding: 10px 0 0 12px;
+    color: #666
+}
+
+.dropout_dsc em {
+    color: #ff6000
+}
+.dropout_agree_area {
+    margin-top: 40px;
+    padding-top: 29px;
+    border-top: 1px solid #ededed;
+    *zoom: 1
+}
+
+.dropout_agree_area:after {
+    display: block;
+    clear: both;
+    content: ''
+}
+
+.dropout_agree_area input {
+    float: left;
+    width: 13px;
+    height: 13px;
+    vertical-align: middle
+}
+
+.dropout_agree_area label {
+    font-size: 12px;
+    line-height: 16px;
+    float: left;
+    margin-top: -1px;
+    padding-left: 9px;
+    vertical-align: middle;
+    color: #333
+}
+
+.dropout_agree_area label em {
+    color: #ff6000
+}
+
+.dropout_agree_area label em strong {
+    font-family: tahoma, sans-serif;
+    color: #390
+}
+
+.dropout_agree_area .contxt {
+    line-height: 19px;
+    margin-bottom: 11px;
+    color: #ff6000
+}
+
+.dropout_agree_area .contxt em {
+    color: #390
+}
+
+.dropout_agree_area + .btn_area_w {
+    padding-top: 76px
+}
+em {
+    font-style: normal;
+}
+.c_header {
+    padding-bottom: 43px
+}
+
+.c_header h2 {
+    font-size: 20px;
+    line-height: 22px;
+    position: relative;
+    color: #333
+}
+
+.c_header .contxt {
+    line-height: 19px;
+    padding-top: 10px;
+    letter-spacing: -1px;
+    color: #666
+}
+
+.c_header .contxt strong {
+    font-size: 14px;
+    color: #08a600
+}
+
+.c_header .contxt a {
+    text-decoration: underline;
+    color: #336fc9
+}

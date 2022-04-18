@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.moca.web.repository.TestRepository">
+
+    <insert id="insert" parameterType="long">
+        INSERT INTO astar_admin.test (test_id)
+        VALUES (#{testId})
+    </insert>
+
+    <!--    <select id="countByRegistrationNumber" resultType="int">-->
+    <!--        SELECT-->
+    <!--        COUNT(member_id)-->
+    <!--        FROM-->
+    <!--        astar_admin.MEMBER-->
+    <!--        WHERE-->
+    <!--        registration_number1 = #{registrationNumber1,typeHandler=encryptTypeHandler}-->
+    <!--        AND registration_number2 = #{registrationNumber2,typeHandler=encryptTypeHandler}-->
+    <!--    </select>-->
+
+
+    <!--    <select id="countByCoperatorNumber" resultType="int">-->
+    <!--        SELECT-->
+    <!--        COUNT(member_id)-->
+    <!--        FROM-->
+    <!--        MEMBER-->
+    <!--        WHERE-->
+    <!--        coperator_number1 = #{coperatorNumber1,typeHandler=encryptTypeHandler}-->
+    <!--        AND coperator_number2 = #{coperatorNumber1,typeHandler=encryptTypeHandler}-->
+    <!--    </select>-->
+
+    <!--    <select id="selectMemberIdByMemberId" resultType="string">-->
+    <!--        SELECT-->
+    <!--          member_id-->
+    <!--        FROM astar_admin.MEMBER-->
+    <!--        WHERE member_id = #{memberId, typeHandler=encryptTypeHandler}-->
+    <!--    </select>-->
+
+    <!--    <select id="selectMemberByMemberId" resultMap="MemberMap" parameterType="string">-->
+    <!--        SELECT-->
+    <!--            member_no,-->
+    <!--            member_id,-->
+    <!--            password,-->
+    <!--            member_name,-->
+    <!--            email,-->
+    <!--            cellphone,-->
+    <!--            join_dt,-->
+    <!--            post_code,-->
+    <!--            address1,-->
+    <!--            address2,-->
+    <!--            bis_number,-->
+    <!--            failed_login_count,-->
+    <!--            expired_password_dt-->
+    <!--        FROM astar_admin.MEMBER-->
+    <!--        WHERE member_id = #{memberId, typeHandler=encryptTypeHandler}-->
+    <!--    </select>-->
+
+    <!--    <select id="selectByMemberEmail" resultType="int">-->
+    <!--        SELECT-->
+    <!--        COUNT(member_no)-->
+    <!--        FROM astar_admin.MEMBER-->
+    <!--        WHERE member_id = #{email,typeHandler=encryptTypeHandler}-->
+    <!--    </select>-->
+
+
+    <!--    <select id="selectMemberIdByCellphone" resultType="string" >-->
+    <!--        SELECT-->
+    <!--        email-->
+    <!--        FROM astar_admin.MEMBER-->
+    <!--        WHERE cellphone = #{cellphone,typeHandler=encryptTypeHandler}-->
+    <!--        LIMIT 1-->
+    <!--    </select>-->
+
+    <!--    <select id="selectMemberIdByMemberEmail" resultMap="ForgetMemberMap" >-->
+    <!--        SELECT-->
+    <!--        member_no,-->
+    <!--        member_name,-->
+    <!--        email-->
+    <!--        FROM astar_admin.MEMBER-->
+    <!--        WHERE cellphone = #{cellphone,typeHandler=encryptTypeHandler}-->
+    <!--        LIMIT 1-->
+    <!--    </select>-->
+
+    <!--    &lt;!&ndash;회원가입&ndash;&gt;-->
+    <!--    <insert id="insertMember" parameterType="Member" useGeneratedKeys="true" keyProperty="memberNo">-->
+    <!--        INSERT INTO astar_admin.MEMBER (-->
+    <!--            member_id,-->
+    <!--            email,-->
+    <!--            password,-->
+    <!--            member_name,-->
+    <!--            bis_number,-->
+    <!--            cellphone,-->
+    <!--            is_agree_marketing,-->
+    <!--            expired_password_dt-->
+    <!--        )-->
+    <!--        VALUES(-->
+    <!--            #{email,typeHandler=encryptTypeHandler},-->
+    <!--            #{email,typeHandler=encryptTypeHandler},-->
+    <!--            #{password},-->
+    <!--            #{memberName, typeHandler=encryptTypeHandler},-->
+    <!--            #{bisNumber,typeHandler=encryptTypeHandler},-->
+    <!--            #{cellphone,typeHandler=encryptTypeHandler},-->
+    <!--            #{isAgreeMarketing},-->
+    <!--            DATE_ADD(NOW(), INTERVAL 6 MONTH)-->
+    <!--        )-->
+    <!--    </insert>-->
+
+
+    <!--    <update id="updateMemberLoginDt">-->
+    <!--        INSERT INTO astar_admin.MEMBER_ACCESS(member_no, join_code, join_etc, login_dt)  VALUES(#{memberNo}, 0, NULL, NOW())-->
+    <!--        ON DUPLICATE KEY UPDATE login_dt = NOW()-->
+    <!--    </update>-->
+
+
+    <!--    <select id="selectMemberByEmailAndMemberName" resultMap="MemberMap" parameterType="string">-->
+    <!--        SELECT-->
+    <!--            member_no,-->
+    <!--            member_id,-->
+    <!--            password,-->
+    <!--            member_name,-->
+    <!--            email,-->
+    <!--            cellphone,-->
+    <!--            join_dt,-->
+    <!--            post_code,-->
+    <!--            address1,-->
+    <!--            address2,-->
+    <!--            bis_number,-->
+    <!--            expired_password_dt-->
+    <!--        FROM astar_admin.MEMBER-->
+    <!--        WHERE email = #{email,typeHandler=encryptTypeHandler}-->
+    <!--        AND member_name = #{memberName,typeHandler=encryptTypeHandler}-->
+    <!--    </select>-->
+
+    <!--    <select id="selectMemberByMemberNo" resultMap="MemberMap">-->
+    <!--        SELECT-->
+    <!--            member_no,-->
+    <!--            member_id,-->
+    <!--            password,-->
+    <!--            member_name,-->
+    <!--            email,-->
+    <!--            cellphone,-->
+    <!--            join_dt,-->
+    <!--            post_code,-->
+    <!--            address1,-->
+    <!--            address2,-->
+    <!--            bis_number,-->
+    <!--            expired_password_dt-->
+    <!--        FROM astar_admin.MEMBER-->
+    <!--        WHERE member_no = #{memberNo}-->
+    <!--    </select>-->
+
+    <!--    <update id="updatePassword" parameterType="Member">-->
+    <!--        UPDATE astar_admin.MEMBER SET-->
+    <!--            password = #{password},-->
+    <!--            failed_login_count = 0,-->
+    <!--            expired_password_dt = DATE_ADD(NOW(), INTERVAL 6 MONTH)-->
+    <!--        WHERE member_id = #{memberId, typeHandler=encryptTypeHandler}-->
+    <!--    </update>-->
+
+    <!--    <update id="updateEmail" parameterType="Member">-->
+    <!--        UPDATE astar_admin.MEMBER SET-->
+    <!--            email = #{email,typeHandler=encryptTypeHandler}-->
+    <!--        WHERE member_id = #{memberId, typeHandler=encryptTypeHandler}-->
+    <!--    </update>-->
+
+    <!--    <update id="updateAddr" parameterType="Member">-->
+    <!--        UPDATE astar_admin.MEMBER SET-->
+    <!--            post_code = #{postCode},-->
+    <!--            address1 = #{address1},-->
+    <!--            address2 = #{address2}-->
+    <!--        WHERE member_id = #{memberId, typeHandler=encryptTypeHandler}-->
+    <!--    </update>-->
+
+    <!--    <update id="updateRegistrationNumber" parameterType="Member">-->
+    <!--        UPDATE MEMBER set registration_number1 = #{registrationNumber1,typeHandler=encryptTypeHandler}, registration_number2 = #{registrationNumber2,typeHandler=encryptTypeHandler}-->
+    <!--        WHERE member_id = #{memberId, typeHandler=encryptTypeHandler}-->
+    <!--    </update>-->
+
+    <!--    <update id="updateCorporateNumber" parameterType="Member">-->
+    <!--        UPDATE MEMBER set coperator_number1 = #{coperatorNumber1,typeHandler=encryptTypeHandler}, coperator_number2 = #{coperatorNumber2,typeHandler=encryptTypeHandler}-->
+    <!--        WHERE member_id = #{memberId, typeHandler=encryptTypeHandler}-->
+    <!--    </update>-->
+
+
+    <!--    <update id="updateBisNumber" parameterType="Member">-->
+    <!--        UPDATE MEMBER set-->
+    <!--            bis_number = #{bisNumber,typeHandler=encryptTypeHandler}-->
+    <!--        WHERE member_id = #{memberId, typeHandler=encryptTypeHandler}-->
+    <!--    </update>-->
+
+    <!--    <update id="updateCellphone" parameterType="Member">-->
+    <!--        UPDATE astar_admin.MEMBER SET-->
+    <!--            cellphone = #{cellphone,typeHandler=encryptTypeHandler}-->
+    <!--        WHERE member_id = #{memberId, typeHandler=encryptTypeHandler}-->
+    <!--    </update>-->
+
+    <!--    <select id="selectMemberForOriginData" parameterType="Member" resultType="map">-->
+    <!--        SELECT-->
+    <!--        *-->
+    <!--        FROM astar_admin.MEMBER-->
+    <!--        WHERE member_id = #{memberId, typeHandler=encryptTypeHandler}-->
+    <!--    </select>-->
+
+    <!--    <delete id="deleteMember" parameterType="Member">-->
+    <!--        DELETE FROM MEMBER WHERE member_id = #{memberId}-->
+    <!--    </delete>-->
+
+    <!--    <select id="selectMemberRole" resultType="Role">-->
+    <!--        SELECT-->
+    <!--            A.role_no,-->
+    <!--            B.role_name,-->
+    <!--            B.desc,-->
+    <!--            A.valid_start_dt,-->
+    <!--            A.valid_end_dt-->
+    <!--        FROM astar_admin.MEMBER_ROLE A JOIN astar_admin.ROLE B-->
+    <!--        WHERE A.role_no = B.role_no-->
+    <!--        AND A.member_no = #{member.memberNo}-->
+    <!--        AND valid_start_dt &lt;= #{nowDate}-->
+    <!--        AND valid_end_dt &gt; #{nowDate}-->
+    <!--    </select>-->
+
+    <!--    <update id="updateFailedLoginCountPlus">-->
+    <!--        UPDATE astar_admin.MEMBER SET-->
+    <!--            failed_login_count = failed_login_count + 1-->
+    <!--        WHERE member_id = #{memberId, typeHandler=encryptTypeHandler}-->
+    <!--    </update>-->
+
+    <!--    <update id="updateFailedLoginCountInit">-->
+    <!--        UPDATE astar_admin.MEMBER SET-->
+    <!--            failed_login_count = 0-->
+    <!--        WHERE member_id = #{memberId, typeHandler=encryptTypeHandler}-->
+    <!--    </update>-->
+
+    <!--    <update id="changePasswordExpiredDt">-->
+    <!--        UPDATE astar_admin.MEMBER SET-->
+    <!--            expired_password_dt = DATE_ADD(NOW(), INTERVAL 6 MONTH)-->
+    <!--        WHERE member_no = #{memberNo}-->
+    <!--    </update>-->
+
+</mapper>
+

@@ -1,0 +1,265 @@
+/*모카제목*/
+.signup-email {
+    margin: 0 !important;
+    background: linear-gradient(to right top, #f5d952, #fda346);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+h1, .h1 {
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+/*로그인하기 말 부분*/
+.SignUpHeader_container__gdFGp .SignUpHeader_message__eOoP7 {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    color: #333236;
+}
+
+.SignUpHeader_container__gdFGp .SignUpHeader_link__BIkIU {
+    margin-left: .6rem;
+    font-weight: 500;
+    color: #ff5b00;
+}
+
+/*로그인하기 부분*/
+.SignUpHeader_container__gdFGp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.InputBase.jsx-2769883788 {
+    position: relative;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+
+/*가입 칸*/
+.InputTextField_input___Fn4V {
+    width: 100%;
+    height: 55px;
+    padding: 17px 20px;
+    border-radius: 8px;
+    border: 1px solid #dde0ea;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-overflow: ellipsis;
+    transition: .2s;
+    color: #333236;
+}
+
+input:focus {outline:2px solid #ffaa00;}
+
+.addbtn {
+    top: 100px;
+    left: 1300px;
+    color: black;
+    font-size: 16px;
+    padding-right: 5px;
+    padding-left: unset;
+    margin-left: unset;
+}
+
+/*칸안에 글씨*/
+label.jsx-3143713324 {
+    position: absolute;
+    display: block;
+    background-color: inherit;
+    transform-origin: left top;
+    border-radius: 5px;
+    top: 0px;
+    left: 0px;
+    transform: translate(21px, 18px) scale(1);
+    transition: all 0.2s ease-in-out 0s;
+    color: rgb(106, 102, 110);
+    font-size: 16px;
+    padding-right: 5px;
+    padding-left: unset;
+    margin-left: unset;
+    cursor: unset;
+}
+
+/*체크박스*/
+.TermsCheckboxes_checkItem__COFES {
+    margin-top: 2rem;
+}
+
+.CheckboxWithChevronButton {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 1.4rem;
+    rem: 0;
+}
+
+
+*, :after, :before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    background-color: transparent;
+}
+
+/*전체약간동의 박스 */
+.TermsCheckboxes_checkAllItems__AdL9R {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 5.5rem;
+    padding-left: 1.4rem;
+    border-radius: .7rem;
+    background-color: #f9f9fb;
+}
+
+.TermsCheckboxes_checkAllMessage__I58gi {
+    cursor: pointer;
+    margin-left: 1.2rem;
+    font-size: 1.6rem;
+    letter-spacing: -.04rem;
+    color: #333236;
+}
+
+.SignForm__submitBtnWrapper button{
+    width: 100% !important;
+    box-shadow: 0 8px 16px -7px rgb(255 186 111 / 84%) !important;
+    background-image: linear-gradient(276deg,#ddce4f, #f38934) !important;
+}
+
+.SignForm__submitBtnWrapper button:before {
+    background-image: linear-gradient(273deg, #f5d952, #fda346) !important;
+}
+
+.SignUpContainer{
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+
+/*
+* {
+   margin: 0px;
+   box-sizing: border-box;
+   font-size: 11px;
+}
+
+html {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+body {
+   background: white;
+}
+
+input {
+   border: 1px solid black;
+   border-radius: 3px;
+   line-height: 35px;
+   font-size: 12px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+.Easy-sgin-in {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 40px;
+}
+
+.wrapper {
+   background-color: white;
+   width: 600px;
+   margin: 100px auto;
+   padding: 10px;
+
+}
+
+div {
+   padding-top: 3px;
+   padding-bottom: 8px;
+}
+
+.title h4 {
+   font-style: italic;
+   background: linear-gradient(to bottom, #FCCF31, #F55555);
+   -webkit-background-clip: text;
+   background-clip: text;
+   color: transparent;
+   font-weight: bold;
+   text-align: center;
+}
+
+.email input {
+   width: 400px;
+   height: 50px;
+   margin-bottom:-15px;
+
+}
+
+.name input {
+   width: 400px;
+   height: 50px;
+   margin-bottom:-15px;
+}
+
+.password input {
+   width: 400px;
+   height: 50px;
+   margin-bottom:-15px;
+}
+
+.passwordCheck input {
+   width: 400px;
+   height: 50px;
+   margin-bottom:-15px;
+}
+.phonenumber input {
+   width: 400px;
+   height: 50px;
+   margin-bottom:-15px;
+}
+
+.address input {
+   width: 400px;
+   height: 50px;
+   margin-bottom:-15px;
+}
+
+
+.signUp button {
+   width: 100%;
+   cursor: pointer;
+   color: black;
+   font-size: 20px;
+}
+
+button {
+   cursor: pointer;
+   height: 55px;
+   background-color: #FFD732;
+}
+
+.error {
+   font-size: 1px;
+   height: 20px;
+   color: red;
+   font-weight: 700;
+}
+
+ul li {
+   margin-top: 10px;
+   list-style: none;
+}
+
+.all_agree span{
+   font-size: 15px;
+   border: 1px;
+}
+*/

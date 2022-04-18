@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.moca.web.repository.SnsApiRepository">
+
+    <select id="checkDuplicationUser" parameterType="String" resultType="Users">
+        select * from moca_client.USER where email=#{email}
+    </select>
+
+    <insert id="signUpKakao" parameterType="Users" useGeneratedKeys="true" keyProperty="id" >
+        insert into moca_client.USER (email, enabled, kakao_id, created_date, modified_date)
+        values (#{email}, true, #{kakaoId}, NOW(), NOW())
+    </insert>
+
+    <insert id="insertAuth" parameterType="Long">
+        insert into moca_client.USER_AUTHORITY (user_id, authority, created_date, modified_date)
+        values (#{id}, 'ROLE_USER', NOW(), NOW())
+    </insert>
+
+    <update id="updateKakao" parameterType="Users" >
+        update moca_client.USER set kakao_id=#{kakaoId}, modified_date=NOW()  where email=#{email}
+    </update>
+
+</mapper>

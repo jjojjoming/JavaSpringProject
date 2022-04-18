@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.moca.web.repository.UserRepository">
+    <insert id="signupUser">
+        INSERT INTO USER (email,phone,name,password,address,enabled,isMarketing,created_date,modified_date)
+        VALUES(#{email},#{phone},#{name},#{password},#{address},#{enabled},#{isMarketing},NOW(),NOW());
+    </insert>
+
+    <insert id="insert_authority" parameterType="UserAuthority">
+      INSERT INTO USER_AUTHORITY(user_id,authority,created_date,modified_date)
+      VALUES(#{userId}, #{authority}, NOW(), NOW())
+   </insert>
+    
+    <select id="emailCount" resultType="int" parameterType="String">
+        SELECT COUNT (*) FROM USER WHERE email = #{email}
+    </select>
+
+</mapper>

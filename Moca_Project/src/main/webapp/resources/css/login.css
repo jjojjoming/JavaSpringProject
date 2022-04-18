@@ -1,0 +1,120 @@
+.login-logo{
+    font-size: 50px;
+    padding-top: 100px;
+    background: linear-gradient(to right top, #f5d952, #fda346);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.SignIn__header > p > a {
+    color : darkorange;
+}
+
+.SignForm .titleText {
+    color : darkorange;
+}
+
+.InteractiveInput > input:focus{
+    border-bottom-color:coral;
+}
+
+.SignForm__submitBtnWrapper .ButtonGeneral {
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 12px;
+    outline: none;
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    box-shadow: 0 8px 16px -7px rgba(255, 186, 111, 0.84);
+    background-image: linear-gradient(276deg,#ddce4f, #f38934);
+}
+
+.SignForm__submitBtnWrapper .ButtonGeneral:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-image: linear-gradient(273deg, #f5d952, #fda346);
+    content: "";
+}
+
+.SignForm__oauth--naver{
+    background-image: url(/resources/img/logo/naver-login.png);
+}
+.SignForm__oauth--google{
+    background-image: url(/resources/img/logo/google-login.png);
+}
+.SignForm__oauth--facebook{
+    background-image: url(/resources/img/logo/facebook-login.png);
+}
+.SignForm__oauth--kakao {
+    background-image: url(/resources/img/logo/kakao-talk.png);
+}
+
+.SignForm__bottom .findPassword{
+    text-align: right;
+
+}
+
+.PopupGeneral__btns .PopupGeneral__btns--each{
+    box-shadow: 0 8px 16px -7px rgba(255, 186, 111, 0.84);
+    background-image: linear-gradient(276deg,#ddce4f, #f38934);
+    background-image: linear-gradient(273deg, #f5d952, #fda346);
+}
+
+.PopupWithBtn__btns .PopupWithBtn__btns--btn1{
+    box-shadow: 0 8px 16px -7px rgba(255, 186, 111, 0.84);
+    background-image: linear-gradient(276deg,#ddce4f, #f38934);
+}
+
+.PopupWithBtn__btns .PopupWithBtn__btns--btn1:before{
+    background-image: linear-gradient(273deg, #f5d952, #fda346);
+}
+
+.PopupGeneral__contents--body > input:focus{
+    border-bottom-color:coral;
+}
+
+.PopupGeneral__closeBtn{
+    font-size: 30px;
+    background: linear-gradient(to right top, #f5d952, #fda346);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.PopupGeneral__contents--iconTop{
+    font-size: 25px;
+    background: linear-gradient(to right top, #f5d952, #fda346);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.container-xxxl.bg-white.p-0{
+    height: 100vh;
+}
+
+.SignForm.SignIn__form{
+    height: inherit;
+}
+
+.PopupWithBtn {
+    display: none;
+}
+
+
+.fade:not(.show) {
+    opacity: 1;
+}
+.modal-backdrop{
+    background-color: #00000036;
+    z-index: 0;
+}
+.modal-dialog{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /*transform: translate(-50%, -50%) !important;*/
+}
